@@ -102,7 +102,8 @@ body {
     font-weight: 600;
 }
 .right__demo-form > input:focus-visible {
-    border: 1px solid var(--accent-blue)!important;
+    outline: none;
+    border: 2px solid var(--accent-blue);
 }
 
 #form-button {
@@ -141,6 +142,28 @@ body {
     color: var(--primary-red);
     font-weight: 700;
     text-decoration: none;
+}
+
+/* INVALID INPUT CUSTOMISATION */
+
+.input-box-invalid{
+    background: url(../images/icon-error.svg) right 1.5rem bottom .9rem no-repeat;
+    right: -30px;
+    border: 3px solid hsl(0, 100%, 74%)!important;
+}
+.input-box__error-message {
+    padding-top: .4rem;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
 
 /* MEDIA QUERIES */
